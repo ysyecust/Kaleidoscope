@@ -1,4 +1,5 @@
 #include <cctype>
+#include <cmath>
 #include <cstdio>
 #include <cstdlib>
 #include <map>
@@ -229,7 +230,7 @@ static std::unique_ptr<ExprAST> ParsePrimary() {
   }
 }
 /// BinopPrecedence - This holds the precedence for each binary operator that is defined.
-static std::map<char, int> BinopPrecedence;
+// static std::map<char, int> BinopPrecedence;
 
 /// GetTokPrecedence - Get the precedence of the pending binary operator token.
 static int GetTokPrcedence(){
